@@ -56,9 +56,10 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://perksofparadise.files.wordpress.com/2020/08/df5db-dsc09659.jpg?w=750",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL: "https://avatars.githubusercontent.com/u/83386931?v=4",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
@@ -66,8 +67,8 @@ window.onload = function() {
     github: "",
     linkedin: "",
     instagram: "",
-    name: "Andrea",
-    lastname: "Madrigal",
+    name: "Name",
+    lastname: "Last Name",
     role: "Developer",
     country: "USA",
     city: "Miami"
