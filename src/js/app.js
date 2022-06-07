@@ -67,11 +67,11 @@ window.onload = function() {
     github: "",
     linkedin: "",
     instagram: "",
-    name: "Name",
-    lastname: "Last Name",
-    role: "Developer",
-    country: "USA",
-    city: "Miami"
+    name: "Roberto",
+    lastname: "López",
+    role: "Developer/Content Creator",
+    country: "Costa Rica",
+    city: "San Jose"
   };
   render(window.variables); //render the card for the first time
 
@@ -90,5 +90,18 @@ window.onload = function() {
           : this.value;
       render(Object.assign(window.variables, values)); // render again the card with new valus
     });
+    const toggleSwitch = document.querySelector(
+      '.theme-switch input[type="checkbox"]'
+    );
+
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      } else {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    }
+
+    toggleSwitch.addEventListener("change", switchTheme, false);
   });
 };
